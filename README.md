@@ -10,7 +10,7 @@ PCB Schematics             |  PCB 3D Rendering         |
 :-------------------------:|:-------------------------:|
 ![](https://github.com/VasileiosKS/FT-Storage-Facility-V0/blob/main/images/FT_RP2040_V1_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT-Storage-Facility-V0/blob/main/images/FT_RP2040_V1_PCB_CAD.PNG) | 
 
-# PCB Design: Version 2 (Final Version)
+# PCB Design: Version 2 
 
 Rather than using through-hole components that consume excessive space, this final iteration adopts surface-mount components to achieve a more compact design. Also, i recently aquired a hot air station making it a bit easier to work with those tiny components.
 
