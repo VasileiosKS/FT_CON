@@ -2,13 +2,13 @@
 
 PCB Schematics             |  PCB 3D Rendering         | Assembled PCB
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/VasileiosKS/FT-Storage-Facility-V0/blob/main/images/FT_RP2040_V0_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT-Storage-Facility-V0/blob/main/images/FT_RP2040_V0_PCB_CAD.PNG) | <img src="https://github.com/VasileiosKS/FT-Storage-Facility-V0/blob/main/images/FT_RP2040_V0_PCB.jpg" alt="Alt Text" style="width:80%; height:auto;"> 
+![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V0_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V0_PCB_CAD.PNG) | <img src="https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V0_PCB.jpg" alt="Alt Text" style="width:80%; height:auto;"> 
 
 # PCB Design: Version 1
 
 PCB Schematics             |  PCB 3D Rendering         |
 :-------------------------:|:-------------------------:|
-![](https://github.com/VasileiosKS/FT-Storage-Facility-V0/blob/main/images/FT_RP2040_V1_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT-Storage-Facility-V0/blob/main/images/FT_RP2040_V1_PCB_CAD.PNG) | 
+![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V1_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V1_PCB_CAD.PNG) | 
 
 # PCB Design: Version 2 
 
@@ -16,7 +16,7 @@ Rather than using through-hole components that consume excessive space, this fin
 
 PCB Schematics             |  PCB 3D Rendering         | Assembled PCB
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/VasileiosKS/FT-Storage-Facility-V0/blob/main/images/FT_RP2040_V2_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT-Storage-Facility-V0/blob/main/images/FT_RP2040_V2_PCB_CAD.PNG) | 
+![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_PCB_CAD.PNG) | 
 
 
 # Overview:
