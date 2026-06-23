@@ -16,7 +16,7 @@ Rather than using through-hole components that consume excessive space, this fin
 
 PCB Schematics             |  PCB 3D Rendering         | Assembled PCB
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_PCB_CAD.PNG) | 
+![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_PCB_CAD.PNG) | ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_PCB.PNG) 
 
 
 # Overview:
