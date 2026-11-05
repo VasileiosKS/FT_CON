@@ -1,3 +1,7 @@
+# Introduction
+
+The FT_CON project is my own take on creating a device meant to be used with Fischertechnik models, as an alternative to other microcontroller-based community projects.
+
 # PCB Design: Version 0
 
 PCB Schematics             |  PCB 3D Rendering         | Assembled PCB
@@ -67,5 +71,19 @@ After visually inspecting the manufactured pcb the followinmg isssues were found
  # Changes made in V2.1
  - Addressed all of the above.
  - Added ESD protection and diodes.
+
+# Related Projects: 
+Projects where the FT_CON project has been applied to:
+- FT-Storage-Facility-V0 (https://github.com/VasileiosKS/FT-Storage-Facility-V0)
+- FT-Colour-Sorting-Station-V0 (https://github.com/VasileiosKS/FT-Colour-Sorting-Station-V0)
+
+# Project Status: Ongoing
+- Future revisions and improvements will be added in the near future.
+
+# Disclaimers:
+- All designs and information under this project, are open-sourced, and no monetary gains are expected.
+- This project is not affiliated with Fischer Technik or any of its trademarks.
+- This document was personally written and reviewed for syntactical errors using AI language tools.
+
 
  
