@@ -10,7 +10,7 @@ PCB Schematics             |  PCB 3D Rendering         |
 :-------------------------:|:-------------------------:|
 ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V1_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V1_PCB_CAD.PNG) | 
 
-# PCB Design: Version 2 
+# PCB Design: Version 2.1 
 
 Rather than using through-hole components that consume excessive space, this final iteration adopts surface-mount components to achieve a more compact design. Also, i recently aquired a hot air station making it a bit easier to work with those tiny components.
 
@@ -18,6 +18,9 @@ PCB Schematics             |  PCB 3D Rendering         | Assembled PCB
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_Schematics.PNG)  |  ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_PCB_CAD.PNG) | ![](https://github.com/VasileiosKS/FT_CON/blob/main/images/FT_RP2040_V2_PCB.png) 
 
+# PCB Design: Version 2.1 
+
+Not manufactured yet. 
 
 # Overview:
 Although this was the first PCB i designed and manufactured, its functional though not without its challenges. Most of the issues encountered are detailed below.
@@ -60,7 +63,9 @@ After visually inspecting the manufactured pcb the followinmg isssues were found
  - Prefixes:
    - The prefix for the 5V regulator was wrongly stated as U4.
    - Multiple instances of clashing silkscreen labels were found between the top and bottom silklayers (C11, C12, C16 ,R1 ,USB-TYPE C)
- 
- Status: All routing and placement issues have been corrected in the latest design files.
  Most issues could have been avoided had i been more carefull.
+ # Changes made in V2.1
+ - Addressed all of the above.
+ - Added ESD protection and diodes.
+
  
