@@ -4,44 +4,49 @@
 
 Physical pin numbers below refer to the **ESP32-S3-WROOM-1U module pads**, not the GPIO numbers. “Used” means the module pin is connected to a named net in the V2 schematic. The EasyEDA pin name is copied from the ESP32 symbol. Physical pin numbers and representative functions are taken from Espressif's ESP32-S3-WROOM-1U datasheet.
 
-| Actual module pin number | Function | Used on board? | EasyEDA pin name | EasyEDA net name |
-|---:|---|:---:|---|---|
-| 4 | ADC1 | Yes | IO4 | GP04 |
-| 5 | ADC1 | Yes | IO5 | GP05 |
-| 6 | ADC1 | Yes | IO6 | GP06 |
-| 7 | ADC1 | Yes | IO7 | GP07 |
-| 8 | ADC2 | Yes | IO15 | GP15 |
-| 9 | ADC2 | Yes | IO16 | GP16 |
-| 10 | UART1 | Yes | IO17 | GP17 |
-| 11 | UART1 | Yes | IO18 | GP18 |
-| 12 | ADC1 | Yes | IO8 | GP08 |
-| 13 | USB | Yes | IO19 | D- |
-| 14 | USB | Yes | IO20 | D+ |
-| 15 | STRAP | Yes | IO3 | GP03 |
-| 16 | STRAP | No | IO46 | — |
-| 17 | ADC1 | Yes | IO9 | GP09 |
-| 18 | ADC1 | Yes | IO10 | GP10 |
-| 19 | ADC2 | Yes | IO11 | GP11 |
-| 20 | ADC2 | Yes | IO12 | GP12 |
-| 21 | ADC2 | Yes | IO13 | GP13 |
-| 22 | ADC2 | Yes | IO14 | GP14 |
-| 23 | RTC | Yes | IO21 | GP21 |
-| 24 | SPI | Yes | IO47 | GP47 |
-| 25 | SPI | Yes | IO48 | GP48 |
-| 26 | STRAP | No | IO45 | — |
-| 27 | STRAP | Yes | IO0 | BOOT |
-| 28 | SPI | Yes | IO35 | I2C_SCL |
-| 29 | SPI | Yes | IO36 | I2C_SDA |
-| 30 | SPI | Yes | IO37 | GP37 |
-| 31 | SPI | Yes | IO38 | GP38 |
-| 32 | JTAG | Yes | IO39 | GP39 |
-| 33 | JTAG | Yes | IO40 | GP40 |
-| 34 | JTAG | Yes | IO41 | GP41 |
-| 35 | JTAG | Yes | IO42 | GP42 |
-| 36 | UART0 | Yes | RXD0 | RX |
-| 37 | UART0 | Yes | TXD0 | TX |
-| 38 | ADC1 | Yes | IO2 | GP02 |
-| 39 | ADC1 | Yes | IO1 | GP01 |
+| Actual module pin number | Function | EasyEDA net name | EasyEDA pin name | Used on board? |
+|---:|---|---|---|:---:|
+| 1 | GND | GND | GND | Yes |
+| 2 | 3V3 | 3V3 | 3V3 | Yes |
+| 3 | EN | EN | EN | Yes |
+| 4 | ADC1 | GP04 | IO4 | Yes |
+| 5 | ADC1 | GP05 | IO5 | Yes |
+| 6 | ADC1 | GP06 | IO6 | Yes |
+| 7 | ADC1 | GP07 | IO7 | Yes |
+| 8 | ADC2 | GP15 | IO15 | Yes |
+| 9 | ADC2 | GP16 | IO16 | Yes |
+| 10 | UART1 | GP17 | IO17 | Yes |
+| 11 | UART1 | GP18 | IO18 | Yes |
+| 12 | ADC1 | GP08 | IO8 | Yes |
+| 13 | USB | D- | IO19 | Yes |
+| 14 | USB | D+ | IO20 | Yes |
+| 15 | STRAP | GP03 | IO3 | Yes |
+| 16 | STRAP | — | IO46 | No |
+| 17 | ADC1 | GP09 | IO9 | Yes |
+| 18 | ADC1 | GP10 | IO10 | Yes |
+| 19 | ADC2 | GP11 | IO11 | Yes |
+| 20 | ADC2 | GP12 | IO12 | Yes |
+| 21 | ADC2 | GP13 | IO13 | Yes |
+| 22 | ADC2 | GP14 | IO14 | Yes |
+| 23 | RTC | GP21 | IO21 | Yes |
+| 24 | SPI | GP47 | IO47 | Yes |
+| 25 | SPI | GP48 | IO48 | Yes |
+| 26 | STRAP | — | IO45 | No |
+| 27 | STRAP | BOOT | IO0 | Yes |
+| 28 | SPI | I2C_SCL | IO35 | Yes |
+| 29 | SPI | I2C_SDA | IO36 | Yes |
+| 30 | SPI | GP37 | IO37 | Yes |
+| 31 | SPI | GP38 | IO38 | Yes |
+| 32 | JTAG | GP39 | IO39 | Yes |
+| 33 | JTAG | GP40 | IO40 | Yes |
+| 34 | JTAG | GP41 | IO41 | Yes |
+| 35 | JTAG | GP42 | IO42 | Yes |
+| 36 | UART0 | RX | RXD0 | Yes |
+| 37 | UART0 | TX | TXD0 | Yes |
+| 38 | ADC1 | GP02 | IO2 | Yes |
+| 39 | ADC1 | GP01 | IO1 | Yes |
+| 40 | GND | GND | GND | Yes |
+| 41 | GND | GND | EPAD | Yes |
 
 The **Function** column shows a representative alternate function documented by Espressif for each GPIO; it does not mean that function is permanently assigned to the pin. Most peripheral signals can be routed through the GPIO Matrix. For example, the board uses GPIO35 and GPIO36 for I²C, even though Espressif lists their SPI functions in the module pin table. GPIO35–GPIO37 are available on this N4 module variant; the Octal-PSRAM restriction applies to R8/R16V variants.
 
