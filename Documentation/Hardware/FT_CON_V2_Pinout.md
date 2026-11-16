@@ -65,7 +65,7 @@ GPIO45 and GPIO46 have no net connected to the corresponding ESP32 module pins i
 
 ## 1. Motor driver architecture
 
-V2 contains two DRV8833 dual H-bridge drivers, providing four independent brushed DC motor channels.
+V2.X's contains two DRV8833 dual H-bridge drivers, providing four independent brushed DC motor channels.
 
 | Motor | Driver | Driver input | ESP32 signal | ESP32 GPIO | Driver output nets |
 |---|---|---|---|---:|---|
