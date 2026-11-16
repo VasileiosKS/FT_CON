@@ -1,5 +1,53 @@
 # FT_CON V2 — Hardware Pinout Reference
 
+## ESP32-S3 GPIO reference
+
+Physical pin numbers below refer to the **ESP32-S3-WROOM-1U module pads**, not the GPIO numbers. “Used” means the module pin is connected to a named net in the V2 schematic. The EasyEDA pin name is copied from the ESP32 symbol.
+
+| GPIO | Actual module pin number | Used on board? | EasyEDA pin name | EasyEDA net name |
+|---:|---:|:---:|---|---|
+| 0 | 27 | Yes | IO0 | BOOT |
+| 1 | 39 | Yes | IO1 | GP01 |
+| 2 | 38 | Yes | IO2 | GP02 |
+| 3 | 15 | Yes | IO3 | GP03 |
+| 4 | 4 | Yes | IO4 | GP04 |
+| 5 | 5 | Yes | IO5 | GP05 |
+| 6 | 6 | Yes | IO6 | GP06 |
+| 7 | 7 | Yes | IO7 | GP07 |
+| 8 | 12 | Yes | IO8 | GP08 |
+| 9 | 17 | Yes | IO9 | GP09 |
+| 10 | 18 | Yes | IO10 | GP10 |
+| 11 | 19 | Yes | IO11 | GP11 |
+| 12 | 20 | Yes | IO12 | GP12 |
+| 13 | 21 | Yes | IO13 | GP13 |
+| 14 | 22 | Yes | IO14 | GP14 |
+| 15 | 8 | Yes | IO15 | GP15 |
+| 16 | 9 | Yes | IO16 | GP16 |
+| 17 | 10 | Yes | IO17 | GP17 |
+| 18 | 11 | Yes | IO18 | GP18 |
+| 19 | 13 | Yes | IO19 | D- |
+| 20 | 14 | Yes | IO20 | D+ |
+| 21 | 23 | Yes | IO21 | GP21 |
+| 35 | 28 | Yes | IO35 | I2C_SCL |
+| 36 | 29 | Yes | IO36 | I2C_SDA |
+| 37 | 30 | Yes | IO37 | GP37 |
+| 38 | 31 | Yes | IO38 | GP38 |
+| 39 | 32 | Yes | IO39 | GP39 |
+| 40 | 33 | Yes | IO40 | GP40 |
+| 41 | 34 | Yes | IO41 | GP41 |
+| 42 | 35 | Yes | IO42 | GP42 |
+| 43 | 37 | Yes | TXD0 | TX |
+| 44 | 36 | Yes | RXD0 | RX |
+| 45 | 26 | No | IO45 | — |
+| 46 | 16 | No | IO46 | — |
+| 47 | 24 | Yes | IO47 | GP47 |
+| 48 | 25 | Yes | IO48 | GP48 |
+
+GPIO45 and GPIO46 have no net connected to the corresponding ESP32 module pins in the schematic. The separate `GP45` label visible elsewhere in the drawing is not connected to the module's IO45 pin.
+
+---
+
+
 **Source:** `1-Schematic_FT_CON_V2_ESP32_(PROD).json`  
 **Board:** FT_CON V2  
 **MCU module:** ESP32-S3-WROOM-1U-N4  
