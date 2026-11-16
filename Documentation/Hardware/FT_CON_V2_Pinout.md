@@ -2,53 +2,55 @@
 
 ## ESP32-S3 GPIO reference
 
-Physical pin numbers below refer to the **ESP32-S3-WROOM-1U module pads**, not the GPIO numbers. “Used” means the module pin is connected to a named net in the V2 schematic. The EasyEDA pin name is copied from the ESP32 symbol.
+Physical pin numbers below refer to the **ESP32-S3-WROOM-1U module pads**, not the GPIO numbers. “Used” means the module pin is connected to a named net in the V2 schematic. The EasyEDA pin name is copied from the ESP32 symbol. Physical pin numbers and representative functions are taken from Espressif's ESP32-S3-WROOM-1U datasheet.
 
-| GPIO | Actual module pin number | Used on board? | EasyEDA pin name | EasyEDA net name |
-|---:|---:|:---:|---|---|
-| 0 | 27 | Yes | IO0 | BOOT |
-| 1 | 39 | Yes | IO1 | GP01 |
-| 2 | 38 | Yes | IO2 | GP02 |
-| 3 | 15 | Yes | IO3 | GP03 |
-| 4 | 4 | Yes | IO4 | GP04 |
-| 5 | 5 | Yes | IO5 | GP05 |
-| 6 | 6 | Yes | IO6 | GP06 |
-| 7 | 7 | Yes | IO7 | GP07 |
-| 8 | 12 | Yes | IO8 | GP08 |
-| 9 | 17 | Yes | IO9 | GP09 |
-| 10 | 18 | Yes | IO10 | GP10 |
-| 11 | 19 | Yes | IO11 | GP11 |
-| 12 | 20 | Yes | IO12 | GP12 |
-| 13 | 21 | Yes | IO13 | GP13 |
-| 14 | 22 | Yes | IO14 | GP14 |
-| 15 | 8 | Yes | IO15 | GP15 |
-| 16 | 9 | Yes | IO16 | GP16 |
-| 17 | 10 | Yes | IO17 | GP17 |
-| 18 | 11 | Yes | IO18 | GP18 |
-| 19 | 13 | Yes | IO19 | D- |
-| 20 | 14 | Yes | IO20 | D+ |
-| 21 | 23 | Yes | IO21 | GP21 |
-| 35 | 28 | Yes | IO35 | I2C_SCL |
-| 36 | 29 | Yes | IO36 | I2C_SDA |
-| 37 | 30 | Yes | IO37 | GP37 |
-| 38 | 31 | Yes | IO38 | GP38 |
-| 39 | 32 | Yes | IO39 | GP39 |
-| 40 | 33 | Yes | IO40 | GP40 |
-| 41 | 34 | Yes | IO41 | GP41 |
-| 42 | 35 | Yes | IO42 | GP42 |
-| 43 | 37 | Yes | TXD0 | TX |
-| 44 | 36 | Yes | RXD0 | RX |
-| 45 | 26 | No | IO45 | — |
-| 46 | 16 | No | IO46 | — |
-| 47 | 24 | Yes | IO47 | GP47 |
-| 48 | 25 | Yes | IO48 | GP48 |
+| Actual module pin number | Function | GPIO | Used on board? | EasyEDA pin name | EasyEDA net name |
+|---:|---|---:|:---:|---|---|
+| 4 | ADC1 | 4 | Yes | IO4 | GP04 |
+| 5 | ADC1 | 5 | Yes | IO5 | GP05 |
+| 6 | ADC1 | 6 | Yes | IO6 | GP06 |
+| 7 | ADC1 | 7 | Yes | IO7 | GP07 |
+| 8 | UART0 | 15 | Yes | IO15 | GP15 |
+| 9 | UART0 | 16 | Yes | IO16 | GP16 |
+| 10 | UART1 | 17 | Yes | IO17 | GP17 |
+| 11 | UART1 | 18 | Yes | IO18 | GP18 |
+| 12 | ADC1 | 8 | Yes | IO8 | GP08 |
+| 13 | USB | 19 | Yes | IO19 | D- |
+| 14 | USB | 20 | Yes | IO20 | D+ |
+| 15 | ADC1 | 3 | Yes | IO3 | GP03 |
+| 16 | STRAP | 46 | No | IO46 | — |
+| 17 | ADC1 | 9 | Yes | IO9 | GP09 |
+| 18 | ADC1 | 10 | Yes | IO10 | GP10 |
+| 19 | ADC2 | 11 | Yes | IO11 | GP11 |
+| 20 | ADC2 | 12 | Yes | IO12 | GP12 |
+| 21 | ADC2 | 13 | Yes | IO13 | GP13 |
+| 22 | ADC2 | 14 | Yes | IO14 | GP14 |
+| 23 | RTC | 21 | Yes | IO21 | GP21 |
+| 24 | SPI | 47 | Yes | IO47 | GP47 |
+| 25 | SPI | 48 | Yes | IO48 | GP48 |
+| 26 | STRAP | 45 | No | IO45 | — |
+| 27 | STRAP | 0 | Yes | IO0 | BOOT |
+| 28 | SPI | 35 | Yes | IO35 | I2C_SCL |
+| 29 | SPI | 36 | Yes | IO36 | I2C_SDA |
+| 30 | SPI | 37 | Yes | IO37 | GP37 |
+| 31 | SPI | 38 | Yes | IO38 | GP38 |
+| 32 | JTAG | 39 | Yes | IO39 | GP39 |
+| 33 | JTAG | 40 | Yes | IO40 | GP40 |
+| 34 | JTAG | 41 | Yes | IO41 | GP41 |
+| 35 | JTAG | 42 | Yes | IO42 | GP42 |
+| 36 | UART0 | 44 | Yes | RXD0 | RX |
+| 37 | UART0 | 43 | Yes | TXD0 | TX |
+| 38 | ADC1 | 2 | Yes | IO2 | GP02 |
+| 39 | ADC1 | 1 | Yes | IO1 | GP01 |
+
+The **Function** column shows a representative alternate function documented by Espressif for each GPIO; it does not mean that function is permanently assigned to the pin. Most peripheral signals can be routed through the GPIO Matrix. For example, the board uses GPIO35 and GPIO36 for I²C, even though Espressif lists their SPI functions in the module pin table. GPIO35–GPIO37 are available on this N4 module variant; the Octal-PSRAM restriction applies to R8/R16V variants.
 
 GPIO45 and GPIO46 have no net connected to the corresponding ESP32 module pins in the schematic. The separate `GP45` label visible elsewhere in the drawing is not connected to the module's IO45 pin.
 
 ---
 
 
-**Source:** `1-Schematic_FT_CON_V2_ESP32_(PROD).json`  
+**Source:** `1-Schematic_FT_CON_V2_ESP32_(PROD).json`; [Espressif ESP32-S3-WROOM-1/WROOM-1U Datasheet v1.8](https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)  
 **Board:** FT_CON V2  
 **MCU module:** ESP32-S3-WROOM-1U-N4  
 **Motor drivers:** 2 × TI DRV8833CPWP  
