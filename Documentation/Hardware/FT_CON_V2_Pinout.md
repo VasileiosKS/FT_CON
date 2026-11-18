@@ -4,7 +4,7 @@
 
 Physical pin numbers below refer to the **ESP32-S3-WROOM-1U module pads**, not the GPIO numbers. “Used” means the module pin is connected to a named net in the V2 schematic. The EasyEDA pin name is copied from the ESP32 symbol. Physical pin numbers and representative functions are taken from Espressif's ESP32-S3-WROOM-1U datasheet.
 
-| Actual module pin number | Function | EasyEDA net name | EasyEDA pin name | Used on board? |
+| Μodule pin number | Function | EasyEDA net | EasyEDA pin name | Used |
 |---:|---|---|---|:---:|
 | 1 | GND | GND | GND | Yes |
 | 2 | 3V3 | 3V3 | 3V3 | Yes |
@@ -48,7 +48,7 @@ Physical pin numbers below refer to the **ESP32-S3-WROOM-1U module pads**, not t
 | 40 | GND | GND | GND | Yes |
 | 41 | GND | GND | EPAD | Yes |
 
-The **Function** column shows a representative alternate function documented by Espressif for each GPIO; it does not mean that function is permanently assigned to the pin. Most peripheral signals can be routed through the GPIO Matrix. For example, the board uses GPIO35 and GPIO36 for I²C, even though Espressif lists their SPI functions in the module pin table. GPIO35–GPIO37 are available on this N4 module variant; the Octal-PSRAM restriction applies to R8/R16V variants.
+The board uses GPIO35 and GPIO36 for I²C, even though Espressif lists their SPI functions in the module pin table. GPIO35–GPIO37 are available on this N4 module variant; the Octal-PSRAM restriction applies to R8/R16V variants.
 
 GPIO45 and GPIO46 have no net connected to the corresponding ESP32 module pins in the schematic. The separate `GP45` label visible elsewhere in the drawing is not connected to the module's IO45 pin.
 
@@ -59,7 +59,6 @@ GPIO45 and GPIO46 have no net connected to the corresponding ESP32 module pins i
 **Board:** FT_CON V2  
 **MCU module:** ESP32-S3-WROOM-1U-N4  
 **Motor drivers:** 2 × TI DRV8833CPWP  
-**Status:** Initial schematic-derived reference; verify against the manufactured PCB before connecting external hardware.
 
 ---
 
@@ -87,15 +86,9 @@ The A/B output nets are the two terminals of each motor channel. Motor direction
 - Neither signal is assigned to an ESP32 GPIO in the schematic.
 - The intended board usage is for the user to enable each driver through an external pull-up connection, rather than consuming MCU GPIOs.
 
-**Electrical recommendation to validate in the hardware design:** use a pull-up resistor in the 20–75 kΩ range, as recommended by Texas Instruments for `nSLEEP`. A 47 kΩ resistor is a suitable nominal choice. The proposed pull-up rail is 5 V, not an ESP32 GPIO. Confirm the actual rail and wiring on the PCB before applying power. TI documents a 6.5 V clamp on `nSLEEP` and recommends the resistor to limit clamp current if the pull-up is taken from `VM`. Do not connect `nSLEEP` directly to a 12 V rail.
+**Electrical recommendation to validate in the hardware design:** use a pull-up resistor in the 20–75 kΩ range, as recommended by Texas Instruments for `nSLEEP`. A 47 kΩ resistor is a suitable nominal choice. The proposed pull-up rail is 5 V, not an ESP32 GPIO. Confirm the actual rail and wiring on the PCB before applying power. 
 
 The driver requires up to 1 ms to become fully operational after leaving sleep mode.
-
-### Driver signals visible in the schematic
-
-- `nFAULT` pins are not shown connected to ESP32 GPIOs.
-- `AISEN` and `BISEN` are the current-sense inputs; the schematic should be checked at the PCB level before assuming current measurement is implemented.
-- Both drivers' motor supply pins use the `MP` net.
 
 ---
 
